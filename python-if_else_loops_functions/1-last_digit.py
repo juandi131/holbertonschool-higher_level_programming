@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import random
-number1 = 0
 number = random.randint(-10000, 10000)
 number1 = number % 10
 if number1 > 5:
