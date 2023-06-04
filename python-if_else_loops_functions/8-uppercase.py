@@ -1,3 +1,4 @@
+#!/usr/bin/python3#!/usr/bin/python3
 def uppercase(s):
     for c in s:
         ascii_val = ord(c)
@@ -7,10 +8,3 @@ def uppercase(s):
         else:
             print("{}".format(c), end="")
     print()
-
-def main():
-    string = "lol"
-    uppercase(string)
-
-if __name__ == "__main__":
-    main()
