@@ -7,5 +7,4 @@ def uniq_add(my_list=[]):
         if num not in unique_set:
             total_sum += num
             unique_set.add(num)
-
     return total_sum
