@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def multiply_by_2(a_dictionary):
+    otro_diccionario = dict()
     for elements in a_dictionary:
-        a_dictionary[elements] = a_dictionary[elements] * 2
+        otro_diccionario.uptate({elements:a_dictionary[elements] * 2})
         return (a_dictionary[elements])
