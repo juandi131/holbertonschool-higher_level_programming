@@ -1,3 +1,7 @@
 #!/usr/bin/python3
-class squere:
+""" SQUARE SQUARE"""
+
+
+class Square:
+    """Sqare empty class"""
     pass
