@@ -23,12 +23,13 @@ class Square:
                 raise ValueError("size must be >= 0")
         else:
             raise TypeError("size must be an integer")
+
     def area(self):
         """ area de cuadradp """
         return self.__size ** 2
 
     def my_print(self):
-        if self.__size== 0:
+        if self.__size == 0:
             print()
         else:
             for _ in range(self.__size):
