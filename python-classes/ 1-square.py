@@ -5,10 +5,3 @@ class Square:
     
     def imprime(self):
         print(self.__size)
-        
-def main():
-    a = Square(12)
-    a.imprime()
-
-if __name__ == '__main__':
-    main()
