@@ -2,7 +2,7 @@
 """ cuadrado cuadrado"""
 
 
-class Squere:
+class Square:
     """ texto texto"""
 
     def __init__(self, size=0):
