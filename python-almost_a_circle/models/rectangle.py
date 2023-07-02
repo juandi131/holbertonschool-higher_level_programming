@@ -91,6 +91,5 @@ class Rectangle(Base):
             print()
         def __str__(self):
         """devuelve una string"""
-
         return (f"[Rectangle] ({self.id}) {self.x}/{self.y} \
 - {self.width}/{self.height}")
