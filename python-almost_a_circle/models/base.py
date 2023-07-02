@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-class Base:
-    """Base class for managing id attribute"""
+"""task 1"""
+import json
+
+
+class Base():
+    """model base"""
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        if id is not None:
-            self.id = id
-        else:
+        if id is None:
             Base.__nb_objects += 1
-            self.id = Base.__nb_objects
+            self.id = self.__nb_objects
+        else:
+            self.id = id
