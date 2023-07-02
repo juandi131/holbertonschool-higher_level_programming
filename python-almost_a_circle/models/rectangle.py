@@ -94,3 +94,36 @@ class Rectangle(Base):
         """retur a string with the Rectangle info"""
         return (f"[Rectangle] ({self.id}) {self.x}/{self.y} \
 - {self.width}/{self.height}")
+    def update(self, *args, **kwargs):
+        """update a Rectangle"""
+        if len(args) == 0:
+            for i, v in kwargs.items():
+                if i == "id":
+                    if type(v) is not None:
+                        self.id = v
+                elif i == "width":
+                    self.width = v
+                elif i == "height":
+                    self.height = v
+                elif i == "x":
+                    self.x = v
+                elif i == "y":
+                    self.y = v
+        else:
+            for i, v in enumerate(args):
+                if i == 0:
+                    if type(v) is not None:
+                        self.id = v
+                elif i == 1:
+                    self.width = v
+                elif i == 2:
+                    self.height = v
+                elif i == 3:
+                    self.x = v
+                elif i == 4:
+                    self.y = v
+
+    def to_dictionary(self):
+        """dictionary of the Rectangle"""
+        return {'x': self.x, 'y': self.y, 'id': self.id,
+                'height': self.height, 'width': self.width}
