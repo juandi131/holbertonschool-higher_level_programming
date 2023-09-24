@@ -10,7 +10,7 @@ if __name__ == "__main__":
     else:
         print("{} arguments:".format(i - 1))
     if i > 1:
-        for l in argv:
+        for long in argv:
             if number != 0:
-                print("{}: {}".format(number, l))
+                print("{}: {}".format(number, long))
             number = number + 1
