@@ -1,4 +1,6 @@
 #!/usr/bin/python3
-for a in range(10):
-    for d in range(a + 1, 10):
-        print("{:d}{:d}".format(a, d), end=", " if not (a == 8 and d == 9) else "\n")
+for num in range(100):
+    if num < 99:
+        print("{:02d}, ".format(num), end="")
+    else:
+        print("{:02d}".format(num))
