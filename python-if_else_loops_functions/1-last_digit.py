@@ -12,4 +12,3 @@ elif number == 0:
     print(f" is 0 and is 0")
 elif lastnumber < 6:
     print(f" is {lastnumber} and is less than 6 and not 0")
-
