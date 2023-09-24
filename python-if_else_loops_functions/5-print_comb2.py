@@ -1,9 +1,4 @@
 #!/usr/bin/python3
-for i in range(0, 100):  
-    if i >= 0 and i < 10:
-        print("0{}, ".format(i), end='')
-        continue
-    if i == 99:
-        print("{}".format(i))
-        break
-    print("{}, ".format(i), end='')
+for a in range(10):
+    for d in range(a + 1, 10):
+        print("{:d}{:d}".format(a, d), end=", " if not (a == 8 and d == 9) else "\n")
