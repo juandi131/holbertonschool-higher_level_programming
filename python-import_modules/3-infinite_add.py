@@ -2,9 +2,12 @@
 from sys import argv
 if __name__ == "__main__":
     n = 0
-    i = 0
-    for nums in argv:
-        if i != 0:
-            n += int(nums)
-        i = 1
-    print("{}".format(n))
+    resultado = 1
+    if len(argv) == 1:
+        print("0")
+    for a in argv:
+        if n == 0:
+            n += 1
+            continue
+        resultado = resultado + int(a)
+    print("{}".format(resultado))
