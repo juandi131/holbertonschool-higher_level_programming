@@ -6,6 +6,6 @@ if __name__ == "__main__":
     for nums in argv:
         if i != 0:
             n += int(nums)
-            print(n)
         i = 1
     print("{}".format(n))
+    
