@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-def element_at(my_list, idx):
-    i = 0
-    if idx >= len(my_list) or idx < 0:
-        return (None)
-    else:
-        return (my_list[idx])
+from prueba import my_list
+a = 4
+if a > (len(my_list) - 1):
+    print(len(my_list))
+    print("sex")
+else:
+    print(my_list[a])
+
