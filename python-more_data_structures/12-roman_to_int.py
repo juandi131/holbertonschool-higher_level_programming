@@ -1,24 +1,26 @@
 #!/usr/bin/python3
-cesar = "DCCVII"
-a = 0
-b = 0
-resultado = 0
-cadena = []
-roman_dict = {
+def roman_to_int(roman_string):
+    if not isinstance(roman_string, str):
+        return None
+    resultado = 0
+    cadena = []
+    roman_dict = {
         'I': 1, 'V': 5, 'X': 10, 'L': 50,
         'C': 100, 'D': 500, 'M': 1000
     }
-for a in range(len(cesar)):
-    char = cesar[a]
-    for car in roman_dict:
-        if char == car:
-            lol = roman_dict.get(car)
-            cadena.append(lol)
-            print(cadena)
-resultado = cadena[len(cadena) - 1]
-for i in range(len(cadena) - 1, -2, -1):
-    if cadena[i] > cadena[i - 1]:
-        resultado = resultado - cadena[i - 1]
-    else:
-        resultado = resultado + cadena[i - 1]
-print(resultado)
+
+    # Convertir números romanos a una lista de valores
+    for char in cesar:
+        if char in roman_dict:
+            valor = roman_dict[char]
+            cadena.append(valor)
+
+    # Calcular el resultado sumando los valores
+    for i in range(len(cadena)):
+        if i < len(cadena) - 1 and cadena[i] < cadena[i + 1]:
+            resultado -= cadena[i]
+        else:
+            resultado += cadena[i]
+
+    print(resultado)
+    
