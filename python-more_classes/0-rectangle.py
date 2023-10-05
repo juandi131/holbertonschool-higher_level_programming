@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-"""this is a rectangle"""
-class Rectangle(self):
+""" SQUARE SQUARE"""
+
+
+class Rectangle:
+    """Sqare empty class"""
     pass
