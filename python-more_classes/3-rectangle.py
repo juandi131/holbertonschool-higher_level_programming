@@ -59,4 +59,4 @@ class Rectangle:
             print("")
             for c in range (self.width):
                 print("#", end="")
-        print("")
+
