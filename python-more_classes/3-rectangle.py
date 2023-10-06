@@ -53,12 +53,13 @@ class Rectangle:
             return perimeter
 
     def __str__(self):
-        if self.height == 0 or self.width == 0:
-            return ""
-        for a in range(self.__height):
-            for c in range (self.width):
-                print("#", end="")
-            if a == self.height - 1:
-                print("", end="")
-            else:
-                print("")
+        """ str str """
+        if self.__width != 0 and self.__height != 0:
+            for s in range(self.__height):
+                for u in range(self.__width):
+                    print("#", end="")
+                if s == self.height - 1:
+                    print("", end="")
+                else:
+                    print("")
+        return ""
