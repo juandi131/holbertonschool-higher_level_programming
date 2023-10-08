@@ -1,16 +1,18 @@
-#!/usr/bin/python3
 class Rectangle:
     def __init__(self, width=0, height=0):
         self.__width = width
         self.__height = height
 
-    # ... Other methods and properties ...
+    # ... Otros métodos y propiedades ...
 
-    def __del__(self):
-        print("Bye rectangle...")
+    def __repr__(self):
+        return f"Rectangle({self.__width}, {self.__height})"
 
-# Create an instance of Rectangle
+# Crear una instancia de Rectangle
 rect = Rectangle(5, 10)
 
-# Delete the instance (this will trigger the __del__ method)
-del rect
+# Utilizar __repr__ para obtener la representación en cadena del objeto
+repr_str = repr(rect)
+
+# Imprimir la representación en cadena
+print(repr_str)
