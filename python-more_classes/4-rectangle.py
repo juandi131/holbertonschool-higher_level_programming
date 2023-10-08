@@ -63,5 +63,6 @@ class Rectangle:
                 else:
                     print("")
         return ""
+
     def __repr__(self):
         return f"Rectangle({self.__width}, {self.__height})"
