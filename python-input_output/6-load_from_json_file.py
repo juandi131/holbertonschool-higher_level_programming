@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-""" load from json """
+""" load n """
 import json
 
+
 def load_from_json_file(filename):
-    """ load from json file """
+    """ lo fr sonile """
     with open(filename) as f:
         return json.load(f)

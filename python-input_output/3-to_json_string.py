@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" json  string """
+""" to jn string """
 import json
 
 
-def from_json_string(my_str):
-    """ json  string """
-    return json.loads(my_str)
+def to_json_string(my_obj):
+    """ to json """
+    return json.dumps(my_obj)
