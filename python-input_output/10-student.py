@@ -15,7 +15,7 @@ class Student:
             new_dic = {}
             for tt in self.__dict__:
                 if tt in attrs:
-                    new_dic[att] = self.__dict__.get(att)
+                    new_dic[tt] = self.__dict__.get(att)
             return new_dic
         else:
             return self.__dict__
