@@ -1,0 +1,2 @@
+-- sqlexercise
+SHOW DATABASES;

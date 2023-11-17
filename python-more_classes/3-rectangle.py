@@ -65,5 +65,3 @@ class Rectangle:
         return ""
     def __repr__(self):
         return "Rectangle:({}, {})".format(self.__width, self.__height)
-sexo = Rectangle(5, 10)
-print(sexo)
