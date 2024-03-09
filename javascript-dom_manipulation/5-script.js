@@ -1,7 +1,8 @@
-button = document.getElementById("update_header")
-header = document.querySelector("header")
-button.addEventListener("click", changeText)
-function changeText()
-{
-    header.textContent = "New Header!!!"
-}
+document.addEventListener('DOMContentLoaded', (event) => {
+    const updateHeader = document.querySelector('#update_header');
+    const header = document.querySelector('header');
+  
+    updateHeader.addEventListener('click', () => {
+      header.textContent = 'New Header!!!';
+    });
+  });
